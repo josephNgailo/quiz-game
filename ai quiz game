@@ -1,0 +1,122 @@
+mport pyttsx3
+engine=pyttsx3.init()
+engine.say("welcome to jimbi question game")
+engine.say("do you want to play the game")
+engine.say("press letter y for yes and letter n to quit the game")
+engine.runAndWait()
+playing=input("do you want to play? ")
+if playing != "y":
+    quit()
+engine.say("ok let start the game")
+score=0
+engine.say("the wrong spelling may lead to wrong answer in this game so check your spelling well")
+answer=engine.say("what type of language is python")
+engine.runAndWait()
+answer=input(">>")
+if answer=="interpreted language":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the correct answer is python language is an interpreted language")
+engine.runAndWait()
+answer=engine.say("what is diffrence between list and tuple")
+engine.runAndWait()
+answer=input(">>")
+if answer=="list is mutable while tuple is not":
+    engine.say("the answer is correct keep it up")
+    score+=1
+else:
+    engine.say("the answer is not correct  but good try the answer is list is mutable while tuple is not")
+engine.runAndWait()
+answer=engine.say("what is namespace in python")
+engine.runAndWait()
+answer=input(">>")
+if answer=="is a place where every name stored and can be hooked up":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the correct answer is is a place where every name stored and can be hooked up")
+engine.runAndWait()
+answer=engine.say("what is lambda in python")
+engine.runAndWait()
+answer=input(">>")
+if answer=="is an inline fuction":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct  but good try the correct answer is lambda function is an inline fuction")
+engine.runAndWait()
+answer=engine.say("what does pass mean in python")
+engine.runAndWait()
+answer=input(">>")
+if answer=="it means no operation python statement":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the right answer is it means no operation python statement")
+engine.runAndWait()
+answer=engine.say("matplotlib and numpy libralies are libralies for")
+engine.runAndWait()
+answer=input(">>")
+if answer=="are libralies for data science and visualization":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct  but good try the correct answer is are libralies for data science and visualization ")
+engine.runAndWait()
+answer=engine.say("what is function of pip install command")
+engine.runAndWait()
+answer=input(">>")
+if answer=="is used for installing the libralies":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the right answer is is used for installing the libralies")
+engine.runAndWait()
+answer=engine.say("what does cpu stand for")
+engine.runAndWait()
+answer=input(">>")
+if answer=="central processing unit":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the right answer is central processing unit")
+engine.runAndWait()
+answer=engine.say("data and instruction are temporarily stored at")
+engine.runAndWait()
+answer=input(">>")
+if answer=="ram":
+    engine.say("the answer is correct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the right answer is ram")
+engine.runAndWait()
+answer=engine.say("mountain kilimanjaro has two peaks which are")
+engine.runAndWait()
+answer=input(">>")
+if answer=="kibo and mawenzi":
+    engine.say("the answer is corecct well done")
+    score+=1
+else:
+    engine.say("the answer is not correct but good try the right answer is kibo and mawenzi")
+engine.runAndWait()
+answer=engine.say("what does cpu stand for")
+engine.runAndWait()
+answer=input(">>")
+if answer=="central processing unit":
+    engine.say("the answer is true you got 2 marks")
+    score+=1
+else:
+    engine.say("the answer is not correct got 0 marks")
+engine.runAndWait()
+answer=engine.say("what does cpu stand for")
+engine.runAndWait()
+answer=input(">>")
+if answer=="central processing unit":
+    engine.say("the answer is true you got 2 marks")
+    score+=1
+else:
+    engine.say("the answer is not correct got 0 marks")
+engine.runAndWait()
+print("")
+print("you have got "+ str(score)+" question corect 12 questions")
